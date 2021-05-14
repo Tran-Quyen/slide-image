@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+.container {
+  max-width: 900px;
+  margin: 100px auto;
+}
+
+.image-viewer {
+  max-width: 100%;
+}
+
+.image-viewer .main {
+  min-height: 350px;
+  background-color: teal;
+  display: block;
+}
+
+.image-viewer .main img {
+  display: block;
+  width: 100%;
+}
+
+.image-viewer .images-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #23262d;
+}
+
+.image-viewer .images-list li {
+  flex: 1;
+  margin: 4px 0;
+}
+
+.image-viewer .images-list li img {
+  width: 100%;
+  border: 5px solid transparent;
+}
+
+.image-viewer .images-list li img.active {
+  border-color: #e74c3c;
+}
